@@ -1,0 +1,84 @@
+/* ======= Reset General ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======= Global ======= */
+body {
+    background-color: #f5f9fe;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ======= Sidebar ======= */
+.sidebar {
+    background-color: #ffffff;
+    min-height: 100vh;
+    color: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+    padding-top: 1rem;
+    border-radius: 4%;
+}
+
+.sidebar a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 14px 24px;
+    border-radius: 12px;
+    margin: 6px 0;
+    transition: background 0.1s ease, color 0.1s ease;
+}
+
+.sidebar a:hover,
+.sidebar .active {
+    background-color:#69767c;
+    color: #ffffff;
+}
+
+/* ======= Buttons ======= */
+.btn-secondary {
+    background-color: #546e7a;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #455a64;
+}
+
+/* ======= Cards ======= */
+.card-metric {
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.card-metric:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    color: #546E7A;
+}
+
+.card-value {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #546E7A;
+}
+
+.card-title {
+    font-size: 0.9rem;
+    color: #607D8B;
+    margin-bottom: 0.3rem;
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard</title>
+    <title>Servir ONG</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -45,26 +45,9 @@
             <div class="container-fluid p-5 mt-5">
                 <div
                     class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4">
-                    <h4 class="mb-4">Balances</h4>
-                </div>
-
-                <!-- Input para idRubro y botón para obtener balance -->
-                <div class="row mb-4">
-                    <div class="col-md-8">
-                        <div
-                            class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-2">
-                            <input type="number" class="form-control" id="idRubroInput"
-                            placeholder="Introduce el ID del rubro y presiona enter">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mostrar el resultado del balance -->
-                <div id="balanceResult" class="card bg-light p-4 d-none">
-                    <h5>Balance del Rubro</h5>
-                    <p><strong>Total Donaciones:</strong> <span id="totalDonaciones"></span></p>
-                    <p><strong>Total Órdenes de Compra:</strong> <span id="totalOrdenesCompra"></span></p>
-                    <p><strong>Balance:</strong> <span id="balance"></span></p>
+                    <h4 class="mb-4">Órdenes de Compra</h4>
+                    <button class="btn btn-secondary"><i class="bi bi-plus-circle me-2"></i>Nueva Órden de Compra
+                    </button>
                 </div>
 
                 <div class="table-responsive">
@@ -73,9 +56,14 @@
                             <tr>
                                 <th>ID</th>
                                 <th>ID Rubro</th>
-                                <th>Total Donaciones</th>
-                                <th>Total Ordenes Compra</th>
-                                <th>Balance (Disponible)</th>
+                                <th>Monto</th>
+                                <th>Fecha Órden</th>
+                                <th>Codigo Rubro</th>
+                                <th>Nombre Rubro</th>
+                                <th>Codigo Proyecto</th>
+                                <th>Nombre Proyecto</th>
+                                <th>Activo</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
