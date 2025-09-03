@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|d:\\desktop\\servirpruebadesarrollo\\gestionproyectosongbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|d:\\desktop\\servirpruebadesarrollo\\gestionproyectosongbackend\\controllers\\ordenescompracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|solutionrelative:controllers\\ordenescompracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|d:\\desktop\\servirpruebadesarrollo\\gestionproyectosongbackend\\data\\ordenescompradata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|solutionrelative:data\\ordenescompradata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|d:\\desktop\\servirpruebadesarrollo\\gestionproyectosongbackend\\models\\ordenescompramodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|solutionrelative:models\\ordenescompramodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|d:\\desktop\\servirpruebadesarrollo\\gestionproyectosongbackend\\controllers\\donacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|solutionrelative:controllers\\donacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Title": "DonacionesController.cs",
+              "DocumentMoniker": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Controllers\\DonacionesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DonacionesController.cs",
+              "ToolTip": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Controllers\\DonacionesController.cs",
+              "RelativeToolTip": "Controllers\\DonacionesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T17:12:07.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrdenesCompraModel.cs",
-              "DocumentMoniker": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Models\\OrdenesCompraModel.cs",
-              "RelativeDocumentMoniker": "Models\\OrdenesCompraModel.cs",
-              "ToolTip": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Models\\OrdenesCompraModel.cs",
-              "RelativeToolTip": "Models\\OrdenesCompraModel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA5wCsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T17:07:03.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrdenesCompraData.cs",
-              "DocumentMoniker": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Data\\OrdenesCompraData.cs",
-              "RelativeDocumentMoniker": "Data\\OrdenesCompraData.cs",
-              "ToolTip": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Data\\OrdenesCompraData.cs",
-              "RelativeToolTip": "Data\\OrdenesCompraData.cs",
-              "ViewState": "AgIAAGkBAAAAAAAAAAAIwIgBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T17:06:58.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrdenesCompraController.cs",
-              "DocumentMoniker": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Controllers\\OrdenesCompraController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrdenesCompraController.cs",
-              "ToolTip": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Controllers\\OrdenesCompraController.cs",
-              "RelativeToolTip": "Controllers\\OrdenesCompraController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANcBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T17:06:27.04Z",
+              "WhenOpened": "2025-09-03T17:49:24.76Z",
               "EditorCaption": ""
             }
           ]
