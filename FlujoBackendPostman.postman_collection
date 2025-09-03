@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "37d0632f-f000-444d-be80-ad4eaf4fea81",
+		"name": "Prueba DevFullStack Servir BackEnd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23777750"
+	},
+	"item": [
+		{
+			"name": "API Proyectos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"codigo\": \"0\",\r\n    \"nombre\": \"Proyecto Demo Servir\",\r\n    \"municipio\": \"Chimaltenango\",\r\n    \"departamento\": \"Chimaltenango\",\r\n    \"fechaInicio\": \"2025-09-03T17:51:47.430Z\",\r\n    \"fechaFin\": \"2025-09-03T17:51:47.430Z\",\r\n    \"success\": 0,\r\n    \"message\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fullstackdeveloperservirprueba.somee.com/v1/Proyectos",
+					"protocol": "https",
+					"host": [
+						"fullstackdeveloperservirprueba",
+						"somee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"Proyectos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Donaciones",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"idRubro\": 2,\r\n  \"monto\": 100,\r\n  \"fechaDonacion\": \"2025-09-03T17:54:45.047Z\",\r\n  \"nombreDonante\": \"Daniel Estuardo Rivas Herrera\",\r\n  \"active\": 1,\r\n  \"codigoRubro\": \"R-5-001\",\r\n  \"nombreRubro\": \"Materiales Educativos\",\r\n  \"codigoProyecto\": \"P-0001\",\r\n  \"nombreProyecto\": \"Proyecto Demo Servir\",\r\n  \"success\": 0,\r\n  \"message\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fullstackdeveloperservirprueba.somee.com/v1/Donaciones/crear",
+					"protocol": "https",
+					"host": [
+						"fullstackdeveloperservirprueba",
+						"somee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"Donaciones",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Rubros",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"codigo\": \"0\",\r\n  \"nombre\": \"Materiales Educativos\",\r\n  \"idProyecto\": 5,\r\n  \"active\": 1,\r\n  \"success\": 0,\r\n  \"message\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fullstackdeveloperservirprueba.somee.com/v1/Rubros",
+					"protocol": "https",
+					"host": [
+						"fullstackdeveloperservirprueba",
+						"somee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"Rubros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Ordenes de Compra",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"idRubro\": 2,\r\n  \"monto\": 20.00,\r\n  \"fechaOrden\": \"2025-09-03T17:57:48.719Z\",\r\n  \"active\": true,\r\n  \"nombreProyecto\": \"Proyecto Demo Servir\",\r\n  \"codigoRubro\": \"R-5-001\",\r\n  \"nombreRubro\": \"Materiales Educativos\",\r\n  \"codigoProyecto\": \"P-0001\",\r\n  \"success\": 0,\r\n  \"message\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fullstackdeveloperservirprueba.somee.com/v1/OrdenesCompra",
+					"protocol": "https",
+					"host": [
+						"fullstackdeveloperservirprueba",
+						"somee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"OrdenesCompra"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Balance entre Donaciones y Ordenes de Compra x Rubros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fullstackdeveloperservirprueba.somee.com/v1/OrdenesCompra/Rubro/{{IdRubro}}/Balance",
+					"protocol": "https",
+					"host": [
+						"fullstackdeveloperservirprueba",
+						"somee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"OrdenesCompra",
+						"Rubro",
+						"{{IdRubro}}",
+						"Balance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
