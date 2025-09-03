@@ -1,0 +1,87 @@
+[
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.ProyectosController",
+    "Method": "ListarProyectos",
+    "RelativePath": "v1/Proyectos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Active",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.ProyectosController",
+    "Method": "CrearProyecto",
+    "RelativePath": "v1/Proyectos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "GestionProyectosONGBackEnd.Models.ProyectosModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.ProyectosController",
+    "Method": "ListarProyectoPorCodigo",
+    "RelativePath": "v1/Proyectos/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.ProyectosController",
+    "Method": "ActualizarProyecto",
+    "RelativePath": "v1/Proyectos/{codigo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "GestionProyectosONGBackEnd.Models.ProyectosModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.ProyectosController",
+    "Method": "EliminarProyecto",
+    "RelativePath": "v1/Proyectos/{codigo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
