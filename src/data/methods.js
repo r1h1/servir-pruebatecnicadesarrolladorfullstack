@@ -1,84 +1,140 @@
-// Para GET y DELETE sin Token
-async function fetchData(url, method, headers = {}) {
-    const response = await fetch(url, {
-        method,
-        mode: "cors",
-        headers: {
-            "Content-Type": "application/json",
-            "Cache-Control": "no-cache, no-store, must-revalidate",
-            ...headers
-        },
-    });
-
-    if (!response.ok) {
-        let errorMessage = `Error ${response.status}: ${response.statusText}`;
-
-        try {
-            const errorData = await response.json();
-            errorMessage = errorData.message || errorMessage;
-        } catch {
-            errorMessage = await response.text();
-        }
-
-        throw new Error(errorMessage);
-    }
-
-    // Si la respuesta es 204 No Content o DELETE, no intentamos parsear JSON
-    if (response.status === 204) {
-        return null;
-    }
-
-    return await response.json();
-}
-
-// Para POST y PUT sin Token
-async function sendData(url, method, data, headers = {}) {
-    const response = await fetch(url, {
-        method,
-        mode: "cors",
-        headers: {
-            "Content-Type": "application/json",
-            "Cache-Control": "no-cache, no-store, must-revalidate",
-            ...headers
-        },
-        body: JSON.stringify(data),
-    });
-
-    if (!response.ok) {
-        let errorMessage = "Error en la petición.";
-
-        try {
-            const errorData = await response.json();
-            errorMessage = errorData.message || errorMessage;
-        } catch {
-            errorMessage = await response.text();
-        }
-
-        throw new Error(errorMessage);
-    }
-
-    return await response.json();
-}
-
-// Función específica para GET (simplificada)
+// Función específica para GET con manejo de errores
 async function getData(url, headers = {}) {
-    return fetchData(url, 'GET', headers);
+    try {
+        const response = await fetch(url, {
+            method: 'GET',
+            mode: "cors",
+            headers: {
+                "Content-Type": "application/json",
+                "Cache-Control": "no-cache, no-store, must-revalidate",
+                ...headers
+            },
+            credentials: 'omit'
+        });
+
+        if (!response.ok) {
+            let errorMessage = `Error ${response.status}: ${response.statusText}`;
+
+            try {
+                const errorData = await response.json();
+                errorMessage = errorData.message || errorMessage;
+            } catch {
+                errorMessage = await response.text();
+            }
+
+            throw new Error(errorMessage);
+        }
+
+        if (response.status === 204) {
+            return null;
+        }
+
+        return await response.json();
+    } catch (error) {
+        throw new Error(error.message);
+    }
 }
 
-// Función específica para DELETE (simplificada)
+// Función específica para DELETE con manejo de errores
 async function deleteData(url, headers = {}) {
-    return fetchData(url, 'DELETE', headers);
+    try {
+        const response = await fetch(url, {
+            method: 'DELETE',
+            mode: "cors",
+            headers: {
+                "Content-Type": "application/json",
+                "Cache-Control": "no-cache, no-store, must-revalidate",
+                ...headers
+            },
+        });
+
+        if (!response.ok) {
+            let errorMessage = `Error ${response.status}: ${response.statusText}`;
+
+            try {
+                const errorData = await response.json();
+                errorMessage = errorData.message || errorMessage;
+            } catch {
+                errorMessage = await response.text();
+            }
+
+            throw new Error(errorMessage);
+        }
+
+        if (response.status === 204) {
+            return null;
+        }
+
+        return await response.json();
+    } catch (error) {
+        throw new Error(error.message);
+    }
 }
 
-// Función específica para POST (simplificada)
+// Función específica para POST con manejo de errores
 async function postData(url, data, headers = {}) {
-    return sendData(url, 'POST', data, headers);
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            mode: "cors",
+            headers: {
+                "Content-Type": "application/json",
+                "Cache-Control": "no-cache, no-store, must-revalidate",
+                ...headers
+            },
+            body: JSON.stringify(data),
+        });
+
+        if (!response.ok) {
+            let errorMessage = "Error en la petición.";
+
+            try {
+                const errorData = await response.json();
+                errorMessage = errorData.message || errorMessage;
+            } catch {
+                errorMessage = await response.text();
+            }
+
+            throw new Error(errorMessage);
+        }
+
+        return await response.json();
+    } catch (error) {
+        throw new Error(error.message);
+    }
 }
 
-// Función específica para PUT (simplificada)
+// Función específica para PUT con manejo de errores
 async function putData(url, data, headers = {}) {
-    return sendData(url, 'PUT', data, headers);
+    try {
+        const response = await fetch(url, {
+            method: 'PUT',
+            mode: "cors",
+            headers: {
+                "Content-Type": "application/json",
+                "Cache-Control": "no-cache, no-store, must-revalidate",
+                ...headers
+            },
+            body: JSON.stringify(data),
+        });
+
+        if (!response.ok) {
+            let errorMessage = "Error en la petición.";
+
+            try {
+                const errorData = await response.json();
+                errorMessage = errorData.message || errorMessage;
+            } catch {
+                errorMessage = await response.text();
+            }
+
+            throw new Error(errorMessage);
+        }
+
+        return await response.json();
+    } catch (error) {
+        throw new Error(error.message);
+    }
 }
 
-
-export { fetchData, sendData, getData, deleteData, postData, putData };
+export { getData, deleteData, postData, putData };
