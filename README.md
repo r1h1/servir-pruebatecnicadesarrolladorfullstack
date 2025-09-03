@@ -137,3 +137,35 @@ Gestiona las órdenes de compra, las cuales reflejan el gasto de los fondos asig
 ### Control de Versiones
 
 - **Plataforma**: GitHub
+
+---
+
+# Información de la Base de Datos y Configuración del Servidor
+
+## Base de Datos
+- **Nombre de la base de datos**: `fullstackdeveloperservirprueba`
+- **Nombre completo de dominio**: `fullstackdeveloperservirprueba.mssql.somee.com`
+- **Versión de SQL**: MS SQL 2022 Express
+
+## Credenciales de Acceso
+- **Nombre de usuario**: `drivash1_SQLLogin_1`
+- **Contraseña de acceso**: `eyup3jf9pf`
+- **Cadena de Conexión**: `workstation id=fullstackdeveloperservirprueba.mssql.somee.com;packet size=4096;user id=drivash1_SQLLogin_1;pwd=eyup3jf9pf;data source=fullstackdeveloperservirprueba.mssql.somee.com;persist security info=False;initial catalog=fullstackdeveloperservirprueba;TrustServerCertificate=True`
+
+## Hosting y Dominio
+- **Nombre del dominio principal**: `fullstackdeveloperservirprueba.somee.com`
+- **Entorno**: `Windows Server 2022 (IIS 10.0, ASP.Net v2.0-4.8, ASP.Net Core)`
+- **URL**: `https://fullstackdeveloperservirprueba.somee.com/swagger/index.html`
+
+## Acceso FTP
+- **Servidor FTP**: `ftp://fullstackdeveloperservirprueba.somee.com o ftp://155.254.244.27`
+- **Directorio**: `/www.fullstackdeveloperservirprueba.somee.com`
+- **Usuario**: `drivash1`
+- **Contraseña**: `QQQ$Blade26gt`
+
+
+
+
+
+
+
