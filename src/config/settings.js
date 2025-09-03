@@ -1,0 +1,75 @@
+// ============================
+// API DOCUMENTACION PARA RE UTILIZAR
+// ============================
+const API_URL_BASE = 'https://fullstackdeveloperservirprueba.somee.com';
+
+// PROYECTOS
+const PROYECTOS_API = `${API_URL_BASE}/v1/Proyectos`;
+const PROYECTOS_GET_BY_CODIGO_API = (codigo) => `${PROYECTOS_API}/${codigo}`;
+const PROYECTOS_ULTIMO_CODIGO_API = `${PROYECTOS_API}/UltimoCodigo`;
+
+// RUBROS
+const RUBROS_API = `${API_URL_BASE}/v1/Rubros`;
+const RUBROS_GET_BY_CODIGO_API = (codigo) => `${RUBROS_API}/${codigo}`;
+const RUBROS_PROYECTO_API = (idProyecto) => `${RUBROS_API}/Proyecto/${idProyecto}`;
+const RUBROS_COMPLETOS_API = `${RUBROS_API}/Completos`;
+const RUBROS_INACTIVAR_PROYECTO_API = (idProyecto) => `${RUBROS_API}/InactivarPorProyecto/${idProyecto}`;
+
+// DONACIONES
+const DONACIONES_API = `${API_URL_BASE}/v1/Donaciones`;
+const DONACIONES_LISTAR_API = `${DONACIONES_API}/listar`;
+const DONACIONES_LISTAR_RUBRO_API = (idRubro) => `${DONACIONES_API}/listar/${idRubro}`;
+const DONACIONES_GET_BY_ID_API = (id) => `${DONACIONES_API}/listar/donacion/${id}`;
+const DONACIONES_TOTAL_RUBRO_API = (idRubro) => `${DONACIONES_API}/total/${idRubro}`;
+const DONACIONES_REPORTE_PROYECTO_API = (idProyecto) => `${DONACIONES_API}/reporte/${idProyecto}`;
+const DONACIONES_TOP_DONANTES_API = `${DONACIONES_API}/topdonantes`;
+
+// ORDENES COMPRA
+const ORDENES_COMPRA_API = `${API_URL_BASE}/v1/OrdenesCompra`;
+const ORDENES_COMPRA_GET_BY_ID_API = (id) => `${ORDENES_COMPRA_API}/${id}`;
+const ORDENES_COMPRA_RUBRO_API = (idRubro) => `${ORDENES_COMPRA_API}/Rubro/${idRubro}`;
+const ORDENES_COMPRA_COMPLETAS_API = `${ORDENES_COMPRA_API}/Completas`;
+const ORDENES_COMPRA_TOTAL_RUBRO_API = (idRubro) => `${ORDENES_COMPRA_API}/Rubro/${idRubro}/Total`;
+const ORDENES_COMPRA_RANGO_FECHAS_API = `${ORDENES_COMPRA_API}/RangoFechas`;
+const ORDENES_COMPRA_REPORTE_PROYECTO_API = (idProyecto) => `${ORDENES_COMPRA_API}/Proyecto/${idProyecto}/Reporte`;
+const ORDENES_COMPRA_BALANCE_RUBRO_API = (idRubro) => `${ORDENES_COMPRA_API}/Rubro/${idRubro}/Balance`;
+const ORDENES_COMPRA_INACTIVAR_RUBRO_API = (idRubro) => `${ORDENES_COMPRA_API}/Rubro/${idRubro}/Inactivar`;
+
+
+// EXPORTAR TODAS LAS CONSTANTES Y FUNCIONES
+export {
+    // URLs BASE
+    API_URL_BASE,
+    
+    // PROYECTOS
+    PROYECTOS_API,
+    PROYECTOS_GET_BY_CODIGO_API,
+    PROYECTOS_ULTIMO_CODIGO_API,
+    
+    // RUBROS
+    RUBROS_API,
+    RUBROS_GET_BY_CODIGO_API,
+    RUBROS_PROYECTO_API,
+    RUBROS_COMPLETOS_API,
+    RUBROS_INACTIVAR_PROYECTO_API,
+    
+    // DONACIONES
+    DONACIONES_API,
+    DONACIONES_LISTAR_API,
+    DONACIONES_LISTAR_RUBRO_API,
+    DONACIONES_GET_BY_ID_API,
+    DONACIONES_TOTAL_RUBRO_API,
+    DONACIONES_REPORTE_PROYECTO_API,
+    DONACIONES_TOP_DONANTES_API,
+    
+    // ORDENES COMPRA
+    ORDENES_COMPRA_API,
+    ORDENES_COMPRA_GET_BY_ID_API,
+    ORDENES_COMPRA_RUBRO_API,
+    ORDENES_COMPRA_COMPLETAS_API,
+    ORDENES_COMPRA_TOTAL_RUBRO_API,
+    ORDENES_COMPRA_RANGO_FECHAS_API,
+    ORDENES_COMPRA_REPORTE_PROYECTO_API,
+    ORDENES_COMPRA_BALANCE_RUBRO_API,
+    ORDENES_COMPRA_INACTIVAR_RUBRO_API,
+};
