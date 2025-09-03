@@ -5,51 +5,51 @@
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAyqHbFZC3ykOYmQnAeyXLMwAAAAACAAAAAAAQZgAAAAEAACAAAADXmFs2xAHdmBf9ktQsocSb+MTiMyYowzhOhica/mnFYgAAAAAOgAAAAAIAACAAAAAlIXc28ZL94lt9+Pd+atG/+W0f0ucipEmRsBMuJ98//yAAAAD+xed8WfS45J4woPDryNBQ5p6R+yUa91KSyXn0lFvD6kAAAADYzniRGMRJ9Gh+0vIZwzw+boQEadlLN2UILdJkFiQQAYBibo4A9JhqqPG8k9bcLh0MUGTjWLsgbFAaBaPeAjSV</EncryptedPassword>
     <_PublishTargetUrl>ftp://155.254.244.27/www.fullstackdeveloperservirprueba.somee.com</_PublishTargetUrl>
-    <History>True|2025-09-03T21:25:39.7388399Z||;True|2025-09-03T11:50:21.2362985-06:00||;True|2025-09-03T11:20:28.2120497-06:00||;</History>
+    <History>True|2025-09-03T21:55:37.9858906Z||;True|2025-09-03T15:25:39.7388399-06:00||;True|2025-09-03T11:50:21.2362985-06:00||;True|2025-09-03T11:20:28.2120497-06:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="appsettings.Development.json">
-      <publishTime>09/02/2025 19:15:05</publishTime>
+      <publishTime>02/09/2025 19:15:05</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>09/02/2025 19:51:14</publishTime>
+      <publishTime>02/09/2025 19:51:14</publishTime>
     </File>
     <File Include="GestionProyectosONGBackEnd.deps.json">
-      <publishTime>09/03/2025 15:25:18</publishTime>
+      <publishTime>03/09/2025 15:25:18</publishTime>
     </File>
     <File Include="GestionProyectosONGBackEnd.dll">
-      <publishTime>09/03/2025 15:25:18</publishTime>
+      <publishTime>09/03/2025 15:55:17</publishTime>
     </File>
     <File Include="GestionProyectosONGBackEnd.exe">
-      <publishTime>09/03/2025 15:25:18</publishTime>
+      <publishTime>09/03/2025 15:55:17</publishTime>
     </File>
     <File Include="GestionProyectosONGBackEnd.pdb">
-      <publishTime>09/03/2025 15:25:18</publishTime>
+      <publishTime>09/03/2025 15:55:17</publishTime>
     </File>
     <File Include="GestionProyectosONGBackEnd.runtimeconfig.json">
-      <publishTime>09/03/2025 11:19:45</publishTime>
+      <publishTime>03/09/2025 11:19:45</publishTime>
     </File>
     <File Include="GestionProyectosONGBackEnd.staticwebassets.endpoints.json">
-      <publishTime>09/03/2025 11:19:48</publishTime>
+      <publishTime>03/09/2025 11:19:48</publishTime>
     </File>
     <File Include="Microsoft.OpenApi.dll">
-      <publishTime>03/06/2024 10:00:56</publishTime>
+      <publishTime>06/03/2024 10:00:56</publishTime>
     </File>
     <File Include="runtimes/unix/lib/net8.0/System.Data.SqlClient.dll">
-      <publishTime>11/12/2024 15:47:16</publishTime>
+      <publishTime>12/11/2024 15:47:16</publishTime>
     </File>
     <File Include="runtimes/win-arm64/native/sni.dll">
-      <publishTime>07/12/2017 05:24:24</publishTime>
+      <publishTime>12/07/2017 05:24:24</publishTime>
     </File>
     <File Include="runtimes/win-x64/native/sni.dll">
-      <publishTime>07/12/2017 05:24:22</publishTime>
+      <publishTime>12/07/2017 05:24:22</publishTime>
     </File>
     <File Include="runtimes/win-x86/native/sni.dll">
-      <publishTime>07/12/2017 05:24:22</publishTime>
+      <publishTime>12/07/2017 05:24:22</publishTime>
     </File>
     <File Include="runtimes/win/lib/net8.0/System.Data.SqlClient.dll">
-      <publishTime>11/12/2024 15:47:26</publishTime>
+      <publishTime>12/11/2024 15:47:26</publishTime>
     </File>
     <File Include="Swashbuckle.AspNetCore.Swagger.dll">
       <publishTime>05/21/2024 10:42:50</publishTime>
@@ -61,10 +61,10 @@
       <publishTime>05/21/2024 10:42:50</publishTime>
     </File>
     <File Include="System.Data.SqlClient.dll">
-      <publishTime>11/12/2024 15:47:12</publishTime>
+      <publishTime>12/11/2024 15:47:12</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>09/03/2025 15:25:19</publishTime>
+      <publishTime>09/03/2025 15:55:18</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -120,7 +120,6 @@ namespace GestionProyectosONGBackEnd.Data
                 lista.Add(new OrdenesCompraModel
                 {
                     Id = Convert.ToInt32(reader["Id"]),
-                    IdRubro = Convert.ToInt32(reader["IdRubro"]),
                     Monto = Convert.ToDecimal(reader["Monto"]),
                     FechaOrden = Convert.ToDateTime(reader["FechaOrden"]),
                     Active = Convert.ToBoolean(reader["Active"]),
