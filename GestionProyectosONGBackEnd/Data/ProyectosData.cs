@@ -72,7 +72,31 @@ namespace GestionProyectosONGBackEnd.Data
             return null;
         }
 
-        // Crear nuevo proyecto
+        // Listar último codigo de proyecto generado
+        public async Task<List<ProyectosModel>> ListarUltimoCodigoDeProyectoGenerado()
+        {
+            List<ProyectosModel> lista = new();
+
+            using SqlConnection con = new(connection);
+            await con.OpenAsync();
+
+            SqlCommand cmd = new("sp_listarUltimoCodigoGenerado", con)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+
+            using var reader = await cmd.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+            {
+                lista.Add(new ProyectosModel
+                {
+                    Codigo = reader["Codigo"].ToString() ?? ""
+                });
+            }
+            return lista;
+        }
+
+
         // Crear nuevo proyecto
         public async Task<ProyectosModel> CrearProyecto(ProyectosModel model)
         {
@@ -152,19 +176,33 @@ namespace GestionProyectosONGBackEnd.Data
         public async Task<ProyectosModel> EliminarProyecto(string Codigo)
         {
             ProyectosModel model = new();
+
             using SqlConnection con = new(connection);
             await con.OpenAsync();
-            SqlCommand cmd = new("sp_eliminarProyecto", con)
+
+            using SqlCommand cmd = new("sp_eliminarProyectoCompleto", con)
             {
                 CommandType = CommandType.StoredProcedure
             };
             cmd.Parameters.AddWithValue("@Codigo", Codigo);
-            using var reader = await cmd.ExecuteReaderAsync();
-            if(await reader.ReadAsync())
+
+            try
             {
-                model.Success = reader.GetBoolean(0) ? 1 : 0;
-                model.Message = reader.GetString(1);
+                using var reader = await cmd.ExecuteReaderAsync();
+
+                if (await reader.ReadAsync())
+                {
+                    model.Success = reader.GetBoolean(0) ? 1 : 0;
+                    model.Message = reader.GetString(1);
+                }
+                reader.Close();
             }
+            catch (Exception ex)
+            {
+                model.Success = 0;
+                model.Message = $"Error al ejecutar el procedimiento: {ex.Message}";
+            }
+
             return model;
         }
     }

@@ -10,6 +10,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ProyectosData>();
+builder.Services.AddScoped<RubrosData>();
+builder.Services.AddScoped<DonacionesData>();
+builder.Services.AddScoped<OrdenesCompraData>();
 
 builder.Services.AddCors(options =>
 {

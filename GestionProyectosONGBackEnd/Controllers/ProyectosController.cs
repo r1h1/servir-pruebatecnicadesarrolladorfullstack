@@ -58,6 +58,29 @@ namespace GestionProyectosONGBackEnd.Controllers
             }
         }
 
+        // GET: v1/Proyectos
+        [HttpGet]
+        [Route("UltimoCodigo")]
+        public async Task<IActionResult> ListarUltimoCodigoDeProyectoGenerado()
+        {
+            try
+            {
+                var proyectos = await _data.ListarUltimoCodigoDeProyectoGenerado();
+
+                if (proyectos == null || !proyectos.Any())
+                {
+                    return NotFound(new { Success = 0, Message = "No se encontró el último código de proyecto.", 
+                        Data = new List<ProyectosModel>() });
+                }
+
+                return Ok(new { Success = 1, Message = "Código de proyecto encontrado.", Data = proyectos });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Success = 0, Message = "Error interno del servidor: " + ex.Message });
+            }
+        }
+
         // POST: v1/Proyectos
         [HttpPost]
         public async Task<IActionResult> CrearProyecto([FromBody] ProyectosModel model)

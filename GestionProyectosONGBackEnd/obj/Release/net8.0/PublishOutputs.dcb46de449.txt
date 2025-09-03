@@ -1,0 +1,17 @@
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\GestionProyectosONGBackEnd.exe
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\appsettings.json
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\GestionProyectosONGBackEnd.dll
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\GestionProyectosONGBackEnd.deps.json
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\GestionProyectosONGBackEnd.runtimeconfig.json
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\GestionProyectosONGBackEnd.pdb
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\System.Data.SqlClient.dll
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\runtimes\win-arm64\native\sni.dll
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\runtimes\win-x64\native\sni.dll
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\runtimes\win-x86\native\sni.dll
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+D:\Desktop\ServirPruebaDesarrollo\GestionProyectosONGBackEnd\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net8.0\System.Data.SqlClient.dll

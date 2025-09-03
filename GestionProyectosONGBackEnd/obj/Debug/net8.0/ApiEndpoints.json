@@ -1,5 +1,471 @@
 [
   {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
+    "Method": "ActualizarDonacion",
+    "RelativePath": "api/Donaciones/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "GestionProyectosONGBackEnd.Models.DonacionesModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestionProyectosONGBackEnd.Models.DonacionResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
+    "Method": "CrearDonacion",
+    "RelativePath": "api/Donaciones/crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "GestionProyectosONGBackEnd.Models.DonacionesModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestionProyectosONGBackEnd.Models.DonacionResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
+    "Method": "EliminarDonacion",
+    "RelativePath": "api/Donaciones/eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestionProyectosONGBackEnd.Models.DonacionResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
+    "Method": "ListarDonaciones",
+    "RelativePath": "api/Donaciones/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "active",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestionProyectosONGBackEnd.Models.DonacionesListResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
+    "Method": "ListarDonacionesPorRubro",
+    "RelativePath": "api/Donaciones/listar/{idRubro}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRubro",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "active",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestionProyectosONGBackEnd.Models.DonacionesListResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
+    "Method": "ListarDonacionPorId",
+    "RelativePath": "api/Donaciones/listar/donacion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "active",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestionProyectosONGBackEnd.Models.DonacionResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
+    "Method": "ObtenerReporteDonacionesPorProyecto",
+    "RelativePath": "api/Donaciones/reporte/{idProyecto}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProyecto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestionProyectosONGBackEnd.Models.ReporteDonacionesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
+    "Method": "ObtenerTopDonantes",
+    "RelativePath": "api/Donaciones/topdonantes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "top",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestionProyectosONGBackEnd.Models.DonacionesListResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
+    "Method": "ObtenerTotalDonacionesPorRubro",
+    "RelativePath": "api/Donaciones/total/{idRubro}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRubro",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestionProyectosONGBackEnd.Models.TotalDonacionesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.OrdenesCompraController",
+    "Method": "ListarOrdenesCompra",
+    "RelativePath": "v1/OrdenesCompra",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Active",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.OrdenesCompraController",
+    "Method": "CrearOrdenCompra",
+    "RelativePath": "v1/OrdenesCompra",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "GestionProyectosONGBackEnd.Models.OrdenesCompraModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.OrdenesCompraController",
+    "Method": "ListarOrdenCompraPorId",
+    "RelativePath": "v1/OrdenesCompra/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Active",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.OrdenesCompraController",
+    "Method": "ActualizarOrdenCompra",
+    "RelativePath": "v1/OrdenesCompra/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "GestionProyectosONGBackEnd.Models.OrdenesCompraModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.OrdenesCompraController",
+    "Method": "EliminarOrdenCompra",
+    "RelativePath": "v1/OrdenesCompra/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.OrdenesCompraController",
+    "Method": "ListarOrdenesCompraCompletas",
+    "RelativePath": "v1/OrdenesCompra/Completas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Active",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.OrdenesCompraController",
+    "Method": "ObtenerReporteOrdenesCompraPorProyecto",
+    "RelativePath": "v1/OrdenesCompra/Proyecto/{idProyecto}/Reporte",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProyecto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.OrdenesCompraController",
+    "Method": "ListarOrdenesCompraPorRangoFechas",
+    "RelativePath": "v1/OrdenesCompra/RangoFechas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fechaInicio",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaFin",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Active",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.OrdenesCompraController",
+    "Method": "ListarOrdenesCompraPorRubro",
+    "RelativePath": "v1/OrdenesCompra/Rubro/{idRubro}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRubro",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Active",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.OrdenesCompraController",
+    "Method": "ObtenerBalanceRubro",
+    "RelativePath": "v1/OrdenesCompra/Rubro/{idRubro}/Balance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRubro",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.OrdenesCompraController",
+    "Method": "InactivarOrdenesCompraPorRubro",
+    "RelativePath": "v1/OrdenesCompra/Rubro/{idRubro}/Inactivar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRubro",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.OrdenesCompraController",
+    "Method": "ObtenerTotalOrdenesCompraPorRubro",
+    "RelativePath": "v1/OrdenesCompra/Rubro/{idRubro}/Total",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRubro",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GestionProyectosONGBackEnd.Controllers.ProyectosController",
     "Method": "ListarProyectos",
     "RelativePath": "v1/Proyectos",
@@ -80,6 +546,159 @@
         "Name": "codigo",
         "Type": "System.String",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.ProyectosController",
+    "Method": "ListarUltimoCodigoDeProyectoGenerado",
+    "RelativePath": "v1/Proyectos/UltimoCodigo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.RubrosController",
+    "Method": "ListarRubros",
+    "RelativePath": "v1/Rubros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Active",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.RubrosController",
+    "Method": "CrearRubro",
+    "RelativePath": "v1/Rubros",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "GestionProyectosONGBackEnd.Models.RubrosModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.RubrosController",
+    "Method": "ListarRubroPorCodigo",
+    "RelativePath": "v1/Rubros/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Active",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.RubrosController",
+    "Method": "ActualizarRubro",
+    "RelativePath": "v1/Rubros/{codigo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "GestionProyectosONGBackEnd.Models.RubrosModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.RubrosController",
+    "Method": "EliminarRubro",
+    "RelativePath": "v1/Rubros/{codigo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.RubrosController",
+    "Method": "ListarRubrosCompletos",
+    "RelativePath": "v1/Rubros/Completos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Active",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.RubrosController",
+    "Method": "InactivarRubrosPorProyecto",
+    "RelativePath": "v1/Rubros/InactivarPorProyecto/{idProyecto}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProyecto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionProyectosONGBackEnd.Controllers.RubrosController",
+    "Method": "ListarRubrosPorProyecto",
+    "RelativePath": "v1/Rubros/Proyecto/{idProyecto}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProyecto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Active",
+        "Type": "System.Boolean",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
