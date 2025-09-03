@@ -91,29 +91,28 @@ Gestiona las órdenes de compra, las cuales reflejan el gasto de los fondos asig
 
 ## Backend Estructura Lógica
 
-### API Proyectos (ProyectosController)
+### Documentación de APIs completas en Swagger
+- **URL Pública**: `https://fullstackdeveloperservirprueba.somee.com/swagger/index.html`
 
+### API Proyectos (ProyectosController)
 - **GET**: Para listar los proyectos (`/api/proyectos`).
 - **POST**: Para crear un proyecto (`/api/proyectos`).
 - **PUT**: Para actualizar un proyecto (`/api/proyectos/{id}`).
 - **DELETE**: Para eliminar un proyecto (`/api/proyectos/{id}`).
 
 ### API Rubros (RubrosController)
-
 - **GET**: Para listar los rubros de un proyecto (`/api/rubros/{idProyecto}`).
 - **POST**: Para crear un rubro en un proyecto (`/api/rubros`).
 - **PUT**: Para actualizar un rubro (`/api/rubros/{id}`).
 - **DELETE**: Para eliminar un rubro (`/api/rubros/{id}`).
 
 ### API Donaciones (DonacionesController)
-
 - **GET**: Para listar las donaciones de un rubro (`/api/donaciones/{idRubro}`).
 - **POST**: Para registrar una donación a un rubro (`/api/donaciones`).
 - **PUT**: Para actualizar una donación (`/api/donaciones/{id}`).
 - **DELETE**: Para eliminar una donación (`/api/donaciones/{id}`).
 
 ### API Órdenes de Compra (OrdenesCompraController)
-
 - **GET**: Para listar las órdenes de compra de un rubro (`/api/ordenesCompra/{idRubro}`).
 - **POST**: Para registrar una orden de compra (`/api/ordenesCompra`).
 - **PUT**: Para actualizar una orden de compra (`/api/ordenesCompra/{id}`).
@@ -124,18 +123,15 @@ Gestiona las órdenes de compra, las cuales reflejan el gasto de los fondos asig
 ## Stack Completo
 
 ### Backend
-
 - **Tecnología**: .NET Core 8
 - **Tipo**: API RESTful
 - **Servidor**: Somee Server (Réplica tipo Azure para tecnologías Microsoft)
 
 ### Frontend
-
 - **Tecnología**: Bootstrap, JavaScript
 - **Despliegue**: Netlify
 
 ### Control de Versiones
-
 - **Plataforma**: GitHub
 
 ---
