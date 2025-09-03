@@ -39,6 +39,7 @@ if (app.Environment.IsProduction())
     app.UseSwaggerUI();
 }
 
+//SE AGREGA CORS PARA CUALQUIER ORIGEN
 app.UseCors();
 
 app.UseHttpsRedirection();
