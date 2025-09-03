@@ -48,7 +48,8 @@
                 <div
                     class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4">
                     <h4 class="mb-4">Órdenes de Compra</h4>
-                    <button class="btn btn-secondary"><i class="bi bi-plus-circle me-2"></i>Nueva Órden de Compra
+                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalOrdenCompra">
+                        <i class="bi bi-plus-circle me-2"></i>Nueva Órden de Compra
                     </button>
                 </div>
 
@@ -71,6 +72,115 @@
                         </tbody>
                     </table>
                 </div>
+
+                <!-- Modal Agregar/Editar Orden de Compra -->
+                <div class="modal fade" id="modalOrdenCompra" tabindex="-1" aria-labelledby="ordenCompraModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content rounded-4 border-0 shadow-sm">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ordenCompraModalLabel">Nueva Órden de Compra</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="formOrdenCompra">
+                                    <input type="hidden" id="ordenCompraId">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="montoOrden" class="form-label">Monto de la Orden (Q)</label>
+                                                <input type="number" class="form-control rounded-3" id="montoOrden"
+                                                    placeholder="0.00" step="0.01" min="0.01" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="fechaOrden" class="form-label">Fecha de la Orden</label>
+                                                <input type="datetime-local" class="form-control rounded-3"
+                                                    id="fechaOrden" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="rubroSelectOrden" class="form-label">Seleccionar Rubro</label>
+                                        <select class="form-select rounded-3" id="rubroSelectOrden" required>
+                                            <option value="">Seleccionar rubro...</option>
+                                            <!-- Las opciones se llenarán dinámicamente con JavaScript -->
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="rubroSelect" class="form-label">Seleccionar Rubro</label>
+                                        <select class="form-select rounded-3" id="rubroSelect" required>
+                                            <option value="">Seleccionar rubro...</option>
+                                            <!-- Las opciones se llenarán dinámicamente con JavaScript -->
+                                        </select>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="codigoRubro" class="form-label">Código del Rubro</label>
+                                                <input type="text" class="form-control rounded-3" id="codigoRubro"
+                                                    placeholder="Ej. R-0001" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="nombreRubro" class="form-label">Nombre del Rubro</label>
+                                                <input type="text" class="form-control rounded-3" id="nombreRubro"
+                                                    placeholder="Ej. Materiales Educativos" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="proyectoSelect" class="form-label">Seleccionar Proyecto</label>
+                                        <select class="form-select rounded-3" id="proyectoSelect" required>
+                                            <option value="">Seleccionar proyecto...</option>
+                                            <!-- Las opciones se llenarán dinámicamente con JavaScript -->
+                                        </select>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="codigoProyecto" class="form-label">Código del
+                                                    Proyecto</label>
+                                                <input type="text" class="form-control rounded-3" id="codigoProyecto"
+                                                    placeholder="Ej. P-0001" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="nombreProyecto" class="form-label">Nombre del
+                                                    Proyecto</label>
+                                                <input type="text" class="form-control rounded-3" id="nombreProyecto"
+                                                    placeholder="Ej. Proyecto Demo Servir" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="activeOrden" checked>
+                                        <label class="form-check-label" for="activeOrden">Activo</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary" id="btnGuardarOrdenCompra">Guardar
+                                    Orden</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
+
             </div>
         </div>
     </div>
