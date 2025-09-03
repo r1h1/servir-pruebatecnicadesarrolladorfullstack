@@ -39,6 +39,8 @@ if (app.Environment.IsProduction())
     app.UseSwaggerUI();
 }
 
+app.UseCors();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

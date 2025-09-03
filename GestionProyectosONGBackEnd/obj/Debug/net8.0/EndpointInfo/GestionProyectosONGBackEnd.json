@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Donaciones/listar": {
+    "/v1/Donaciones/listar": {
       "get": {
         "tags": [
           "Donaciones"
@@ -44,7 +44,7 @@
         }
       }
     },
-    "/api/Donaciones/listar/{idRubro}": {
+    "/v1/Donaciones/listar/{idRubro}": {
       "get": {
         "tags": [
           "Donaciones"
@@ -92,7 +92,7 @@
         }
       }
     },
-    "/api/Donaciones/listar/donacion/{id}": {
+    "/v1/Donaciones/listar/donacion/{id}": {
       "get": {
         "tags": [
           "Donaciones"
@@ -140,7 +140,7 @@
         }
       }
     },
-    "/api/Donaciones/crear": {
+    "/v1/Donaciones/crear": {
       "post": {
         "tags": [
           "Donaciones"
@@ -188,7 +188,7 @@
         }
       }
     },
-    "/api/Donaciones/actualizar/{id}": {
+    "/v1/Donaciones/actualizar/{id}": {
       "put": {
         "tags": [
           "Donaciones"
@@ -247,7 +247,7 @@
         }
       }
     },
-    "/api/Donaciones/eliminar/{id}": {
+    "/v1/Donaciones/eliminar/{id}": {
       "delete": {
         "tags": [
           "Donaciones"
@@ -287,7 +287,7 @@
         }
       }
     },
-    "/api/Donaciones/total/{idRubro}": {
+    "/v1/Donaciones/total/{idRubro}": {
       "get": {
         "tags": [
           "Donaciones"
@@ -327,7 +327,7 @@
         }
       }
     },
-    "/api/Donaciones/reporte/{idProyecto}": {
+    "/v1/Donaciones/reporte/{idProyecto}": {
       "get": {
         "tags": [
           "Donaciones"
@@ -367,7 +367,7 @@
         }
       }
     },
-    "/api/Donaciones/topdonantes": {
+    "/v1/Donaciones/topdonantes": {
       "get": {
         "tags": [
           "Donaciones"

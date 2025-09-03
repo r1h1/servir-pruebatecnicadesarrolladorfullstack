@@ -2,7 +2,7 @@
   {
     "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
     "Method": "ActualizarDonacion",
-    "RelativePath": "api/Donaciones/actualizar/{id}",
+    "RelativePath": "v1/Donaciones/actualizar/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -33,7 +33,7 @@
   {
     "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
     "Method": "CrearDonacion",
-    "RelativePath": "api/Donaciones/crear",
+    "RelativePath": "v1/Donaciones/crear",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -59,7 +59,7 @@
   {
     "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
     "Method": "EliminarDonacion",
-    "RelativePath": "api/Donaciones/eliminar/{id}",
+    "RelativePath": "v1/Donaciones/eliminar/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -85,7 +85,7 @@
   {
     "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
     "Method": "ListarDonaciones",
-    "RelativePath": "api/Donaciones/listar",
+    "RelativePath": "v1/Donaciones/listar",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -111,7 +111,7 @@
   {
     "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
     "Method": "ListarDonacionesPorRubro",
-    "RelativePath": "api/Donaciones/listar/{idRubro}",
+    "RelativePath": "v1/Donaciones/listar/{idRubro}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -142,7 +142,7 @@
   {
     "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
     "Method": "ListarDonacionPorId",
-    "RelativePath": "api/Donaciones/listar/donacion/{id}",
+    "RelativePath": "v1/Donaciones/listar/donacion/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -173,7 +173,7 @@
   {
     "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
     "Method": "ObtenerReporteDonacionesPorProyecto",
-    "RelativePath": "api/Donaciones/reporte/{idProyecto}",
+    "RelativePath": "v1/Donaciones/reporte/{idProyecto}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -199,7 +199,7 @@
   {
     "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
     "Method": "ObtenerTopDonantes",
-    "RelativePath": "api/Donaciones/topdonantes",
+    "RelativePath": "v1/Donaciones/topdonantes",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -225,7 +225,7 @@
   {
     "ContainingType": "GestionProyectosONGBackEnd.Controllers.DonacionesController",
     "Method": "ObtenerTotalDonacionesPorRubro",
-    "RelativePath": "api/Donaciones/total/{idRubro}",
+    "RelativePath": "v1/Donaciones/total/{idRubro}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
