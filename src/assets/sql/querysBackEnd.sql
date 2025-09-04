@@ -1213,3 +1213,63 @@ BEGIN
         CAST(1 AS BIT) AS RubroActivo;
 END
 GO
+
+
+
+---------
+
+-- POWER BI
+-- Vista para proyectos y rubros
+CREATE VIEW vw_ProyectosRubros AS
+SELECT 
+    p.*,
+    r.Id AS RubroId,
+    r.Codigo AS CodigoRubro,
+    r.Nombre AS NombreRubro,
+    r.Active AS RubroActivo
+FROM Proyectos p
+INNER JOIN Rubros r ON p.Id = r.IdProyecto
+WHERE p.Active = 1 AND r.Active = 1;
+
+-- Vista para donaciones completas
+CREATE VIEW vw_DonacionesCompletas AS
+SELECT 
+    d.*,
+    r.Codigo AS CodigoRubro,
+    r.Nombre AS NombreRubro,
+    p.Codigo AS CodigoProyecto,
+    p.Nombre AS NombreProyecto,
+    p.Municipio,
+    p.Departamento
+FROM Donaciones d
+INNER JOIN Rubros r ON d.IdRubro = r.Id AND r.Active = 1
+INNER JOIN Proyectos p ON r.IdProyecto = p.Id AND p.Active = 1
+WHERE d.Active = 1;
+
+-- Vista para órdenes de compra completas
+CREATE VIEW vw_OrdenesCompraCompletas AS
+SELECT 
+    oc.*,
+    r.Codigo AS CodigoRubro,
+    r.Nombre AS NombreRubro,
+    p.Codigo AS CodigoProyecto,
+    p.Nombre AS NombreProyecto,
+    p.Municipio,
+    p.Departamento
+FROM OrdenesCompra oc
+INNER JOIN Rubros r ON oc.IdRubro = r.Id AND r.Active = 1
+INNER JOIN Proyectos p ON r.IdProyecto = p.Id AND p.Active = 1
+WHERE oc.Active = 1;
+
+-- Vista para los Top 5 Donantes
+CREATE VIEW vw_Top5Donantes AS
+SELECT TOP 5
+    d.NombreDonante,
+    SUM(d.Monto) AS TotalDonado,
+    COUNT(d.Id) AS CantidadDonaciones
+FROM Donaciones d
+INNER JOIN Rubros r ON d.IdRubro = r.Id AND r.Active = 1
+INNER JOIN Proyectos p ON r.IdProyecto = p.Id AND p.Active = 1
+WHERE d.Active = 1
+GROUP BY d.NombreDonante
+ORDER BY TotalDonado DESC;
