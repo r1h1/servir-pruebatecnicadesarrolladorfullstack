@@ -1,33 +1,34 @@
--- (a) El porcentaje de ejecución de fondos para cada proyecto registrado. La ejecución se
--- calcula como el monto total ejecutado (gastado) dentro del total de fondos recibidos por
--- medio de donaciones.
+-- Consulta para obtener el porcentaje de ejecución de fondos por proyecto
+SELECT
+    p.Codigo AS CodigoProyecto,
+    p.Nombre AS NombreProyecto,
+    ISNULL(SUM(oc.Monto), 0) AS TotalComprado,
+    ISNULL(SUM(d.Monto), 0) AS TotalDonado,
+    CASE
+        WHEN ISNULL(SUM(d.Monto), 0) = 0 THEN 0
+        ELSE (ISNULL(SUM(oc.Monto), 0) / ISNULL(SUM(d.Monto), 0)) * 100
+        END AS PorcentajeEjecucion
+FROM Proyectos p
+         INNER JOIN Rubros r ON p.Id = r.IdProyecto AND r.Active = 1
+         LEFT JOIN OrdenesCompra oc ON r.Id = oc.IdRubro AND oc.Active = 1
+         LEFT JOIN Donaciones d ON r.Id = d.IdRubro AND d.Active = 1
+WHERE p.Active = 1
+GROUP BY p.Codigo, p.Nombre
+ORDER BY p.Nombre;
 
-SELECT 
-    P.Nombre AS Proyecto, 
-    SUM(O.Monto) AS Ejecutado, 
-    D.MontoTotal AS TotalRecibido,
-    (SUM(O.Monto) / D.MontoTotal) * 100 AS PorcentajeEjecucion
-FROM Proyectos P
-JOIN Donaciones D ON D.IdProyecto = P.Id
-JOIN OrdenesCompra O ON O.IdRubro = D.IdRubro
-GROUP BY P.Nombre, D.MontoTotal;
 
-
-
---- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-
-
--- (b) La disponibilidad de fondos en cada rubro del proyecto “X”, de modo que se muestren
--- todos los rubros del proyecto (incluyendo los que pueden no tener ninguna donación
--- recibida o ninguna orden de compra emitida)
-
-SELECT 
-    R.Nombre AS Rubro, 
-    COALESCE(SUM(D.Monto), 0) AS DonacionesRecibidas,
-    COALESCE(SUM(O.Monto), 0) AS GastosRealizados,
-    (COALESCE(SUM(D.Monto), 0) - COALESCE(SUM(O.Monto), 0)) AS Disponibilidad
-FROM Rubros R
-LEFT JOIN Donaciones D ON D.IdRubro = R.Id
-LEFT JOIN OrdenesCompra O ON O.IdRubro = R.Id
-WHERE R.IdProyecto = 'X'  -- Proyecto específico
-GROUP BY R.Nombre;
+-- Consulta para obtener la disponibilidad de fondos en cada rubro del proyecto "X"
+SELECT
+    r.Codigo AS CodigoRubro,
+    r.Nombre AS NombreRubro,
+    ISNULL(SUM(d.Monto), 0) AS TotalDonado,
+    ISNULL(SUM(oc.Monto), 0) AS TotalComprado,
+    ISNULL(SUM(d.Monto), 0) - ISNULL(SUM(oc.Monto), 0) AS DisponibilidadDeFondos
+FROM Rubros r
+         INNER JOIN Proyectos p ON r.IdProyecto = p.Id
+         LEFT JOIN Donaciones d ON r.Id = d.IdRubro AND d.Active = 1
+         LEFT JOIN OrdenesCompra oc ON r.Id = oc.IdRubro AND oc.Active = 1
+WHERE p.Codigo = 'P-0005'
+  AND p.Active = 1
+GROUP BY r.Codigo, r.Nombre
+ORDER BY r.Nombre;

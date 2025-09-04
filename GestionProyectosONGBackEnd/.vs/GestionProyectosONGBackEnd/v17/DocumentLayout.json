@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|d:\\desktop\\servirpruebadesarrollo\\gestionproyectosongbackend\\data\\ordenescompradata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|solutionrelative:data\\ordenescompradata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|d:\\desktop\\servirpruebadesarrollo\\gestionproyectosongbackend\\controllers\\proyectoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|solutionrelative:controllers\\proyectoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|d:\\desktop\\servirpruebadesarrollo\\gestionproyectosongbackend\\data\\proyectosdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|solutionrelative:data\\proyectosdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|d:\\desktop\\servirpruebadesarrollo\\gestionproyectosongbackend\\models\\proyectosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCF6DF68-9105-4937-92A8-393216CA1FF9}|GestionProyectosONGBackEnd.csproj|solutionrelative:models\\proyectosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrdenesCompraData.cs",
-              "DocumentMoniker": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Data\\OrdenesCompraData.cs",
-              "RelativeDocumentMoniker": "Data\\OrdenesCompraData.cs",
-              "ToolTip": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Data\\OrdenesCompraData.cs",
-              "RelativeToolTip": "Data\\OrdenesCompraData.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAArwH8AAABPAAAAAAAAAA==",
+              "Title": "ProyectosController.cs",
+              "DocumentMoniker": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Controllers\\ProyectosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProyectosController.cs",
+              "ToolTip": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Controllers\\ProyectosController.cs",
+              "RelativeToolTip": "Controllers\\ProyectosController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAwIUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T21:53:49.932Z",
+              "WhenOpened": "2025-09-04T04:21:24.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProyectosData.cs",
+              "DocumentMoniker": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Data\\ProyectosData.cs",
+              "RelativeDocumentMoniker": "Data\\ProyectosData.cs",
+              "ToolTip": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Data\\ProyectosData.cs",
+              "RelativeToolTip": "Data\\ProyectosData.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAAwNEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T04:21:23.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProyectosModel.cs",
+              "DocumentMoniker": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Models\\ProyectosModel.cs",
+              "RelativeDocumentMoniker": "Models\\ProyectosModel.cs",
+              "ToolTip": "D:\\Desktop\\ServirPruebaDesarrollo\\GestionProyectosONGBackEnd\\Models\\ProyectosModel.cs",
+              "RelativeToolTip": "Models\\ProyectosModel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAywCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T04:21:22.73Z",
               "EditorCaption": ""
             }
           ]
